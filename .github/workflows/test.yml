@@ -1,11 +1,9 @@
 name: "test-scheduler"
 
-on:
-  workflow_dispatch:
-    
-   
-  schedule:
-    - cron:  '*/30 5 * * *'    # triggers the workflow every day at 5:30 UTC
+#on: 
+on: [ push, pull_request ]
+#  schedule:
+#    - cron:  '*/30 5 * * *'    # triggers the workflow every day at 5:30 UTC
 
 # ┌───────────── minute (0 - 59)
 # │ ┌───────────── hour (0 - 23)
